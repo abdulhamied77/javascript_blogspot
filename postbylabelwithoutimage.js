@@ -1,6 +1,6 @@
 //<![CDATA[
 function labelthumbs(json) {
- document.write('<ul class="label_with_thumbs">');
+ document.write('<ul>');
  for (var i = 0; i < numposts; i++) {
   var entry = json.feed.entry[i];
   var posttitle = entry.title.$t;
@@ -27,7 +27,7 @@ function labelthumbs(json) {
    d = s.substr(b + 5, c - b - 5);
    if ((a != -1) && (b != -1) && (c != -1) && (d != "")) {
     thumburl = d;
-   } else thumburl = 'http://2.bp.blogspot.com/_IKigl6y9hFA/TMdcT1jzo5I/AAAAAAAAAHA/hAKuT9rJpFU/noimage.jpg';
+   } else thumburl = '#';
   }
   var postdate = entry.published.$t;
   var cdyear = postdate.substring(0, 4);
