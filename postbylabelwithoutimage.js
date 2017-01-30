@@ -48,7 +48,7 @@ function labelthumbs(json) {
   monthnames[12] = "Dec";
   document.write('<li class="clearfix">');
   if (showpostthumbnails == true)
-  document.write('<h1><a chref="' + posturl + '" target ="_top">' + posttitle + '</a></h1><br>');
+  document.write('<a href="' + posturl + '" target ="_top" style="font: 25px arial, sans-serif;">' + posttitle + '</a><br>');
   if ("content" in entry) {
    var postcontent = entry.content.$t;
   } else
